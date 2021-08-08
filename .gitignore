@@ -4,4 +4,5 @@ node_modules/
 .idea
 haters/
 variables.env
+variables.env.now
 package-lock.json
