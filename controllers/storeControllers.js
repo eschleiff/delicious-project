@@ -140,12 +140,19 @@ exports.heartStore = async (req, res) => {
     const operator = hearts.includes(req.params.id) ? '$pull' : '$addToSet';
     const user = await User.findByIdAndUpdate(req.user._id, { [operator]: { hearts: req.params.id }}, { new: true });
     res.json(user);
-}
+};
 
 exports.getHearts = async (req, res) => {
     const stores = await Store.find({
         _id: { $in: req.user.hearts }
     });
     res.render('stores', { title: 'Hearter Stores', stores })
+};
+
+exports.getTopStores = async (req, res) => {
+    const stores = await Store.getTopStores();
+    // res.json(stores)
+    res.render('topStores', { stores, title: 'Top Stores!' });
+
 }
   
