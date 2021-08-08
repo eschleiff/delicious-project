@@ -2,6 +2,10 @@
 
 Coming Soon!
 
+## Version
+
+Make sure you are running node 12 or 13, otherwise you'll get a lot of errors running 'npm install'.
+
 ## Sample Data
 
 To load sample data, run the following command in your terminal:
