@@ -1,6 +1,7 @@
 ## What is this?
 
-Coming Soon!
+It's here! This practice app was a learning module for me to help me better understand Node.JS and MongoDB, among other things. 
+Check it out here https://project-delicious.herokuapp.com/
 
 ## Version
 
